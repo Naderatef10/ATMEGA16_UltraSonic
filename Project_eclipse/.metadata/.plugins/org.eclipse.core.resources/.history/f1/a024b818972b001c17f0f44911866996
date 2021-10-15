@@ -1,0 +1,26 @@
+#include "ultrasonic.h"
+#include "lcd.h"
+#include <avr/io.h>
+
+
+
+int main(){
+	SREG |= (1<<7);
+	uint16 dist=5;
+	LCD_init();
+	Ultrasonic_init();
+	Ultrasonic_Trigger();
+    dist= Ultrasonic_readDistance();
+    LCD_displayString("Distance is: ");
+    LCD_moveCursor(0,13);
+    LCD_intgerToString(dist);
+	while(1){
+
+
+
+	}
+
+
+
+
+}

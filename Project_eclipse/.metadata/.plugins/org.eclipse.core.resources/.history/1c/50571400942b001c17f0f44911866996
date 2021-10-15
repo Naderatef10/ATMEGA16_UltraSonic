@@ -1,0 +1,24 @@
+#include "ultrasonic.h"
+#include "lcd.h"
+
+
+
+
+int main(){
+LCD_init();
+Ultrasonic_init();
+
+
+
+
+
+
+while(1){
+
+
+}
+
+
+
+
+}

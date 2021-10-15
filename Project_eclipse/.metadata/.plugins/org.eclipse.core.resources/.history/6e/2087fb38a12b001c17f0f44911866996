@@ -1,0 +1,18 @@
+#ifndef ULTRASONIC_H_
+#define ULTRASONIC_H_
+/* Included libraries*/
+#include "std_types.h"
+
+/* Macro definitions*/
+
+#define TRIGGER_PIN   PIN0_ID /*defining which pin the trigger of the ultrasonic will be connected*/
+#define TRIGGER_PORT  PORTC_ID /*defining which port the trigger of the ultrasonic will be connected*/
+
+#define FACTOR 58.5
+
+void Ultrasonic_init(void);
+void Ultrasonic_edgeProcessing(void);
+uint16 Ultrasonic_readDistance(void);
+void Ultrasonic_Trigger(void);
+
+#endif /* ULTRASONIC_H_ */

@@ -1,0 +1,14 @@
+#ifndef ULTRASONIC_H_
+#define ULTRASONIC_H_
+#include "std_types.h"
+
+
+#define TRIGGER_PIN   PIN0_ID
+#define TRIGGER_PORT  PORTA_ID
+
+void Ultrasonic_init(void);
+void Ultrasonic_edgeProcessing(void);
+uint16 Ultrasonic_readDistance(void);
+void Ultrasonic_Trigger(void);
+
+#endif /* ULTRASONIC_H_ */
