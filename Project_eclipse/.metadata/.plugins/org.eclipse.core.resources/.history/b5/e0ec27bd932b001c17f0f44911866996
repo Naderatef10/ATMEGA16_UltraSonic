@@ -1,9 +1,0 @@
-#ifndef ULTRASONIC_H_
-#define ULTRASONIC_H_
-#include "std_types.h"
-
-
-#define TRIGGER_PIN   PIN0_ID
-#define TRIGGER_PORT  PORTA_ID
-
-#endif /* ULTRASONIC_H_ */
